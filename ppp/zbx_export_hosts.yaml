@@ -1,0 +1,40 @@
+zabbix_export:
+  version: '6.4'
+  host_groups:
+    - uuid: 15a15f98bce447579df43bc637270d1b
+      name: 'PU Engineering'
+  hosts:
+    - host: PUTM33TBA0201
+      name: PUTM33TBA0201
+      description: 'PU A2'
+      proxy:
+        name: PUTM09ZBXPROAS02
+      templates:
+        - name: PU_Standard_ENG_Template
+      groups:
+        - name: 'PU Engineering'
+      interfaces:
+        - useip: 'NO'
+          ip: ''
+          dns: PUTM33TBA0201.tiremes.contiwan.com
+          interface_ref: if1
+      inventory:
+        name: PUTM33TBA0201
+      inventory_mode: AUTOMATIC
+    - host: PUTM33TBA0202
+      name: PUTM33TBA0202
+      description: 'DSU A2'
+      proxy:
+        name: PUTM09ZBXPROAS02
+      templates:
+        - name: PU_Standard_ENG_Template
+      groups:
+        - name: 'PU Engineering'
+      interfaces:
+        - useip: 'NO'
+          ip: ''
+          dns: PUTM33TBA0202.tiremes.contiwan.com
+          interface_ref: if1
+      inventory:
+        name: PUTM33TBA0202
+      inventory_mode: AUTOMATIC

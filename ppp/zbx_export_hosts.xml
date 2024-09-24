@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>6.4</version>
+    <host_groups>
+        <host_group>
+            <uuid>15a15f98bce447579df43bc637270d1b</uuid>
+            <name>PU Engineering</name>
+        </host_group>
+    </host_groups>
+    <hosts>
+        <host>
+            <host>PUTM33TBA0201</host>
+            <name>PUTM33TBA0201</name>
+            <description>PU A2</description>
+            <proxy>
+                <name>PUTM09ZBXPROAS02</name>
+            </proxy>
+            <templates>
+                <template>
+                    <name>PU_Standard_ENG_Template</name>
+                </template>
+            </templates>
+            <groups>
+                <group>
+                    <name>PU Engineering</name>
+                </group>
+            </groups>
+            <interfaces>
+                <interface>
+                    <useip>NO</useip>
+                    <ip/>
+                    <dns>PUTM33TBA0201.tiremes.contiwan.com</dns>
+                    <interface_ref>if1</interface_ref>
+                </interface>
+            </interfaces>
+            <inventory>
+                <name>PUTM33TBA0201</name>
+            </inventory>
+            <inventory_mode>AUTOMATIC</inventory_mode>
+        </host>
+        <host>
+            <host>PUTM33TBA0202</host>
+            <name>PUTM33TBA0202</name>
+            <description>DSU A2</description>
+            <proxy>
+                <name>PUTM09ZBXPROAS02</name>
+            </proxy>
+            <templates>
+                <template>
+                    <name>PU_Standard_ENG_Template</name>
+                </template>
+            </templates>
+            <groups>
+                <group>
+                    <name>PU Engineering</name>
+                </group>
+            </groups>
+            <interfaces>
+                <interface>
+                    <useip>NO</useip>
+                    <ip/>
+                    <dns>PUTM33TBA0202.tiremes.contiwan.com</dns>
+                    <interface_ref>if1</interface_ref>
+                </interface>
+            </interfaces>
+            <inventory>
+                <name>PUTM33TBA0202</name>
+            </inventory>
+            <inventory_mode>AUTOMATIC</inventory_mode>
+        </host>
+    </hosts>
+</zabbix_export>

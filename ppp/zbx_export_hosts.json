@@ -1,0 +1,43 @@
+{
+    "zabbix_export": {
+        "version": "6.4",
+        "host_groups": [
+            {
+                "uuid": "15a15f98bce447579df43bc637270d1b",
+                "name": "PU Engineering"
+            }
+        ],
+        "hosts": [
+            {
+                "host": "PUTM33VSIPC04",
+                "name": "PUTM33VSIPC04",
+                "description": "VSIPC",
+                "proxy": {
+                    "name": "PUTM09ZBXPROAS02"
+                },
+                "templates": [
+                    {
+                        "name": "PU_Standard_ENG_Template"
+                    }
+                ],
+                "groups": [
+                    {
+                        "name": "PU Engineering"
+                    }
+                ],
+                "interfaces": [
+                    {
+                        "useip": "NO",
+                        "ip": "",
+                        "dns": "PUTM33VSIPC04.tiremes.contiwan.com",
+                        "interface_ref": "if1"
+                    }
+                ],
+                "inventory": {
+                    "name": "PUTM33VSIPC04"
+                },
+                "inventory_mode": "AUTOMATIC"
+            }
+        ]
+    }
+}
